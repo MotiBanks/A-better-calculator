@@ -5,15 +5,35 @@ st.set_page_config(page_title="Dual Calculator", layout="centered")
 #  Asked gpt cause i am not familar with CSS and streamlit app is too plain
 st.markdown("""
     <style>
-    body {
-        color: #f0f0f0;
-        background-color: #0d1117;
-    }
-    .stTextInput, .stNumberInput, .stButton, .stSelectbox {
-        color: #ffffff !important;
-    }
+    /* Dark background for the whole app */
     .stApp {
-        padding: 1.5rem;
+        background-color: #0e1117;
+        color: #f0f0f0;
+        padding: 2rem;
+    }
+
+    /* Input fields */
+    input, textarea, .stNumberInput input {
+        background-color: #1e222a;
+        color: #f0f0f0;
+        border: none;
+    }
+
+    /* Dropdowns and buttons */
+    .stSelectbox, .stButton>button {
+        background-color: #1e222a;
+        color: #f0f0f0;
+    }
+
+    /* Section headers and text */
+    h1, h2, h3, h4, h5, h6, p {
+        color: #f0f0f0;
+    }
+
+    /* Success and error message backgrounds */
+    .stAlert {
+        background-color: #20232a;
+        color: #f0f0f0;
     }
     </style>
 """, unsafe_allow_html=True)
