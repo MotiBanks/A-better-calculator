@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Dual Calculator", layout="centered")
 
-#  Asked gpt cause i am not familar with CSS and streamlit app is too plain
+#  Asked gpt to help give colour cause i am not familar with CSS and streamlit app is too plain for me
 st.markdown("""
     <style>
     /* Dark background for the whole app */
